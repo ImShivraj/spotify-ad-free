@@ -6,4 +6,4 @@ def index(request):
     # return HttpResponse("this is homepage")
 
 def login(request):
-    return HttpResponse("this is about page")
+    return HttpResponse("this is login page")
