@@ -1,5 +1,6 @@
 <doctype html>
     <html lang="en">
+
     <head>
         <meta charset="utf-8">
         <title>Login into Spotify</title>
@@ -8,12 +9,13 @@
         <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="/static/css/main-css.css">
     </head>
+
     <body>
         <div id="header">
             <h1>Spotify Ad-free</h1>
             <p id="desc">remove all voice ads 😄🎵</p>
         </div>
-    
+
         <div id="loginPage">
             <a class="btn btn-sm btn-green" href="/login">
                 Login with Spotify
@@ -23,7 +25,10 @@
             <span id="github">
                 <a id="github" href="#" target="_blank">View on GitHub</a>
             </span>
-            
+            <a href="{% url "social:begin" "spotify" %}">Spotify</a>
+
+
         </div>
     </body>
-    </html> 
+
+    </html>

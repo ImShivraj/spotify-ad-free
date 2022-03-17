@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+    'social_django',
+    'NoAdsApp', 
 ]
 
 MIDDLEWARE = [
@@ -129,6 +130,8 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
     
 ]
+
+SOCIAL_AUTH_URL_NAMESPACE = 'social'
 
 SOCIAL_AUTH_SPOTIFY_KEY = '345780aa5760458ca8bb8c59ad37cfdf' 
 
