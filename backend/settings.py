@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,14 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
     
 ]
+
+SOCIAL_AUTH_SPOTIFY_KEY = '345780aa5760458ca8bb8c59ad37cfdf' 
+
+SOCIAL_AUTH_SPOTIFY_SECRET = '163dedc022c648c080de666b5966f691'
+
+AUTHENTICATION_BACKENDS = (
+    
+    'social_core.backends.spotify.SpotifyOAuth2',
+)
+
+SOCIAL_AUTH_SPOTIFY_SCOPE = ['user-read-email', 'user-library-read']
