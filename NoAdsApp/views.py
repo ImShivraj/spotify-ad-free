@@ -7,3 +7,6 @@ def index(request):
 
 def login(request):
     return HttpResponse("this is login page")
+
+def auth(request):
+    return render(request, 'auth.html')
