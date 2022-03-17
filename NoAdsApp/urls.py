@@ -8,7 +8,7 @@ app_name = 'myapp'
 urlpatterns = [
     path('', views.index, name='home'),
     path('login', views.login, name='login'),
-    path('noadsapp', views.auth, name='auth'),
+    path('auth', views.auth, name='auth'),
     
 
 ]

@@ -142,6 +142,6 @@ AUTHENTICATION_BACKENDS = (
     'social_core.backends.spotify.SpotifyOAuth2',
 )
 
-SOCIAL_AUTH_SPOTIFY_SCOPE = ['user-read-email', 'user-library-read']
+SOCIAL_AUTH_SPOTIFY_SCOPE = ['user-read-email', 'user-library-read', 'user-read-currently-playing']
 
-LOGIN_REDIRECT_URL = '/noadsapp'
+LOGIN_REDIRECT_URL = '/auth'
