@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import base64
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -145,3 +146,5 @@ AUTHENTICATION_BACKENDS = (
 SOCIAL_AUTH_SPOTIFY_SCOPE = ['user-read-email', 'user-library-read', 'user-read-currently-playing']
 
 LOGIN_REDIRECT_URL = '/auth'
+
+
